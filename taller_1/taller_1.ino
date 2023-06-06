@@ -4,8 +4,9 @@ int tiemposEncendido[] = {500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5
 
 // Configuración de leds como "salidas"
 void setup() {
+  //Usar la función "pinMode" para establecer de forma individual las variables dentro del arreglo "ledPares" como outpout/salidas
   for (int i = 0; i < 10; i++) {
-    pinMode(ledPares[i], OUTPUT);
+    pinMode(ledPares[i], OUTPUT); 
   }
 }
 
