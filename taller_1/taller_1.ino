@@ -12,6 +12,7 @@ void setup() {
 }
 //----------------------------------------------------------------------------------------------------------------------------
 void loop() {
+  
   //Iniciar un cliclo "while" para repetir el número de ciclos que queramos
   while (numCiclos > 0) {
     //Iniciamos los ciclos for para encender los leds y luego apagarlos
@@ -19,20 +20,19 @@ void loop() {
     for (int i = 0; i < 10; i += 2) { //inicio de for
       digitalWrite(ledPares[i], HIGH); // Enciende el primer LED del par
       digitalWrite(ledPares[i + 1], HIGH); // Enciende el segundo LED del par
-   
       delay(1000); // Espera 1 segundo entre pares de LEDs para repetir el ciclo for de encendido
     } //fin de for
     
     //ciclo for de apagado
     for (int i = 0; i < 10; i++) { //inicio de for
       digitalWrite(ledPares[i], LOW); // Apagar el LED
-      
       delay(1000); // Espera 1 segundo antes de repetir el ciclo for de apagado
     } //fin de for
-  
-    delay(3000); // Espera 3 segundo antes de repetir el ciclo while
+    // fin de los ciclos de encedido y apagado
     
+    delay(3000); // Espera 3 segundo antes de repetir el ciclo while
     numCiclos--; // restar "1" en el número  de ciclos elegidos
+    
   }
 }
        //Código no ocupado para apagar en secuencia de inicio
