@@ -33,9 +33,9 @@ void loop() {
     delay(3000); // Espera 3 segundo antes de repetir el ciclo while
     numCiclos--; // restar "1" en el número  de ciclos elegidos
     
-  }
+  }//Fin del ciclo while para repetir el número de ciclos
 }
-       //Código no ocupado para apagar en secuencia de inicio
+      //Código no ocupado para apagar en secuencia de inicio
       //delay(tiemposEncendido[i/2]); // Espera el tiempo de encendido para el par
       //digitalWrite(ledPares[i], LOW); // Apaga el primer LED del par
       //digitalWrite(ledPares[i + 1], LOW); // Apaga el segundo LED del par
